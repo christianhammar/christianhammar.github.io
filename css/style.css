@@ -1,0 +1,95 @@
+body{
+  background: #000;
+  font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 600;
+  color: white;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: -.015em;
+  overflow: hidden;
+  background-image: url();
+}
+
+body, html {
+ width: 100%;
+ height: 100%;
+ padding: 0;
+ margin: 0;
+}
+
+a {
+text-decoration: none;
+color: white;
+}
+a:hover {
+  opacity: .5;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 30px;
+}
+p {
+  display: block;
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.description {
+  flex: 0 auto;
+  order: 2;
+}
+.header  {
+  flex: 1;
+  order: 1;
+  margin-bottom: 300px;
+}
+.intro {
+  margin: 40px;
+  text-align: left;
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+.blurbox {
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  -webkit-backface-visibility; hidden;
+  position: fixed;
+  border-radius: 30px;
+  background-color: hsla(0, 0, 0, 0.4);
+  width: 420px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .header  {
+    margin-bottom: 160px;
+  }
+  .blurbox {
+    width: 320px;
+    height: 400px;
+  }
+}
