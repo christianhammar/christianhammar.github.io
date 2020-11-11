@@ -5,7 +5,7 @@ body{
   color: white;
   font-size: 22px;
   line-height: normal;
-  letter-spacing: -.02em;
+  letter-spacing: -.03em;
   overflow: hidden;
   background-image: url();
 }
@@ -31,9 +31,6 @@ h1 {
   font-size: 22px;
   line-height: 30px;
 }
-p {
-  display: block;
-}
 video {
   object-fit: cover;
   width: 100vw;
@@ -43,12 +40,8 @@ video {
   left: 0;
 }
 .description {
-  flex: 0 auto;
-  order: 2;
 }
 .header  {
-  flex: 1;
-  order: 1;
   margin-bottom: 300px;
 }
 .intro {
@@ -65,10 +58,6 @@ video {
   background-color: hsla(0, 0, 0, 0.4);
   width: 420px;
   height: 560px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: stretch;
 }
 .wrapper {
   align-items: center;
@@ -78,7 +67,7 @@ video {
   width: 100%;
 }
 
-@media screen (max-width: 550px) {
+@media screen and (max-width: 550px) {
   body {
     font-size: 20px;
   }
