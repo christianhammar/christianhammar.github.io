@@ -69,7 +69,7 @@ video {
 @media only screen and (max-width: 600px) {
   body {
     font-size: 20px;
-    background-image:url("assets/image.jpg");
+    background-image: url("assets/image.jpg");
   }
   h1 {
     font-size: 20px;
